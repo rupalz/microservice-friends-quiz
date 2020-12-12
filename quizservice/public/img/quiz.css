@@ -1,0 +1,16 @@
+body{
+	background-color:#cda9d6;
+	color : #050505;
+	font-size: 20px;
+	margin-left: 2rem;
+
+}
+
+#show{
+ 	min-height: 500px;
+   background:url('./img/enjoy.jpg') no-repeat;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
