@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const serv2 ="http://localhost:9001/sh";
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-mongoose.connect("mongodb+srv://dummy:qwerty@12345@cluster0.oyd5u.mongodb.net/<dbname>?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://rupal:teddy@cluster0.oyd5u.mongodb.net/quiz?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 const connection = mongoose.connection;
 connection.once('open', () => {
     console.log("MongoDb  established successfully");
@@ -88,7 +88,7 @@ app.post('/score', function (req, res) {
         console.log(foundItems);
         res.render("score", { name: foundItems.name });
     })
-    // res.render('score');
+    //  res.render('score');
 })
 
 app.get("/", (req, res) => {
